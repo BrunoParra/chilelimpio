@@ -68,5 +68,22 @@ if (rutVal.length < 9 || rutVal.length > 10) {
         rutAdv.style.display;
 
 }
+if (nombreVal.length < 3 || nombreVal.length > 20) {
+        count++;
+        console.log('failed');
+        nomAlert.style.display;
+}
+if (appaternoVal)
+
+if (apmaternoVal)
+
+if (fnacimientoVal)
+
+if (edadVal.length < 18 || edadVal.length > 35) {
+        count++;
+        console.log('failed');
+        edadAlert.style.display;
+}
+
         return count;
 }
