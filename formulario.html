@@ -18,7 +18,7 @@
     <div class="container-fluid">
 
       <!--a class="navbar-brand" style="text-align: center;" href="#">Fundación Chile Limpio</a-->
-      <h3 style="color:white;">Fundación Chile Limpio</h3>
+      <h3 style="color:white;"> Fundación Chile Limpio</h3>
 
       <div class="collapse navbar-collapse" id="navbarsExample06">
         <ul class="navbar-nav me-auto mb-2 mb-xl-0">
@@ -27,60 +27,60 @@
 
   </nav>
   <!--fin navbar-->
+  <div>
+    <div class="container">
+      <div class="container mt-3">
+        <div class="box" style="display: flex; background-color: aliceblue; justify-content: center;">
+          <div class="col-6" id="colforma">
+            <form id="forma">
+              <h2>
+                <center> Datos Personales</center>
+              </h2>
+              <form action="/action_page.php">
+                <div class="mb-3 mt-3">
+                <p class="text-danger" style="font-size: 0.75rem;" id="rutAlert">* El RUT debe tener de 9 a 10 carácteres</p>
+                  <label for="rut">Rut</label>
+                  <input type="text" minlength='9' maxlength='10' class="form-control" id="rut" placeholder="12345678-9"
+                    name="rut" id="rut" required>
+                </div>
+                <div class="mb-3 mt-3">
+                <p class="text-danger" style="font-size: 0.75rem;" id="nombreAlert">* El nombre debe tener entre 3 y 20 carácteres</p>
+                  <label for="nombre">Nombre</label>
+                  <input type="text" minlength='3' maxlength='20' class="form-control" id="nombre"
+                    name="nombre" pattern="[A-Za-zñÑáéíóúÁÉÍÓÚüÜ\s]+" required>
+                </div>
+                <div class="mb-3 mt-3">
+                <p class="text-danger" style="font-size: 0.75rem;" id="apellido1Alert">* El apellido paterno debe tener entre 3 y 20 carácteres</p>
+                  <label for="appaterno">Apellido Paterno</label>
+                  <input type="text" minlength='3' maxlength='20' class="form-control" id="appaterno"
+                    name="appaterno" pattern="[A-Za-zñÑáéíóúÁÉÍÓÚüÜ\s]+" required>
+                </div>
+                <div class="mb-3 mt-3">
+                <p class="text-danger" style="font-size: 0.75rem;" id="apellido2Alert">* El apellido materno tener entre 3 y 20 carácteres</p>
+                  <label for="apmaterno">Apellido Materno</label>
+                  <input type="text" minlength='3' maxlength='20' class="form-control" id="apmaterno"
+                    name="apmaterno" pattern="[A-Za-zñÑáéíóúÁÉÍÓÚüÜ\s]+" required>
+                </div>
+                <div class="mb-3 mt-3">
+                <p class="text-danger" style="font-size: 0.75rem;" id="fnacAlert">* Debe seleccionar su fecha de nacimiento</p>
+                  <label for="fnacimiento">Fecha Nacimiento</label>
+                  <input type="date" class="form-control" id="fnacimiento" name="fechanacimiento" min="1988-01-01"
+                    max="2005-12-31" required>
+                </div>
+                <div class="mb-3 mt-3">
+                <p class="text-danger" style="font-size: 0.75rem;" id="edadAlert">* La edad debe estar entre 18 a 35 años</p>
+                  <label for="edad">Edad</label>
+                  <input type="number" min='18' max='35' class="form-control" id="edad"
+                    name="edad" required>
+                </div>
 
-  <div class="container">
-    <div class="container mt-3">
-      <div class="box" style="display: flex; background-color: aliceblue; justify-content: center;">
-        <div class="col-6" id="colforma">
-          <form id="forma">
-            <h2>
-              <center> Datos Personales</center>
-            </h2>
-            <form action="/action_page.php">
-              <div class="mb-3 mt-3">
-              <p class="text-danger" style="font-size: 0.75rem;" id="rutAlert">* El RUT debe tener de 9 a 10 carácteres</p>
-                <label for="rut">Rut</label>
-                <input type="text" minlength='9' maxlength='10' class="form-control" id="rut" placeholder="12345678-9"
-                  name="rut" id="rut" required>
-              </div>
-              <div class="mb-3 mt-3">
-              <p class="text-danger" style="font-size: 0.75rem;" id="nombreAlert">* El nombre debe tener entre 3 y 20 carácteres</p>
-                <label for="nombre">Nombre</label>
-                <input type="text" minlength='3' maxlength='20' class="form-control" id="nombre"
-                   name="nombre" pattern="[A-Za-zñÑáéíóúÁÉÍÓÚüÜ\s]+" required>
-              </div>
-              <div class="mb-3 mt-3">
-              <p class="text-danger" style="font-size: 0.75rem;" id="apellido1Alert">* El apellido paterno debe tener entre 3 y 20 carácteres</p>
-                <label for="appaterno">Apellido Paterno</label>
-                <input type="text" minlength='3' maxlength='20' class="form-control" id="appaterno"
-                   name="appaterno" pattern="[A-Za-zñÑáéíóúÁÉÍÓÚüÜ\s]+" required>
-              </div>
-              <div class="mb-3 mt-3">
-              <p class="text-danger" style="font-size: 0.75rem;" id="apellido2Alert">* El apellido materno tener entre 3 y 20 carácteres</p>
-                <label for="apmaterno">Apellido Materno</label>
-                <input type="text" minlength='3' maxlength='20' class="form-control" id="apmaterno"
-                  name="apmaterno" pattern="[A-Za-zñÑáéíóúÁÉÍÓÚüÜ\s]+" required>
-              </div>
-              <div class="mb-3 mt-3">
-              <p class="text-danger" style="font-size: 0.75rem;" id="fnacAlert">* Debe seleccionar su fecha de nacimiento</p>
-                <label for="fnacimiento">Fecha Nacimiento</label>
-                <input type="date" class="form-control" id="fnacimiento" name="fechanacimiento" min="1988-01-01"
-                  max="2005-12-31" required>
-              </div>
-              <div class="mb-3 mt-3">
-              <p class="text-danger" style="font-size: 0.75rem;" id="edadAlert">* La edad debe estar entre 18 a 35 años</p>
-                <label for="edad">Edad</label>
-                <input type="number" min='18' max='35' class="form-control" id="edad"
-                  name="edad" required>
-              </div>
-
-              <p class="text-danger" style="font-size: 0.75rem;" id="generoAlert">* Debe seleccionar un género</p>
-              <label for="genero">Género</label>
-              <select id="genero" name="genero">
-                <option value="1">Masculino</option>
-                <option value="2">Femenino</option>
-                <option value="3">Prefiero no decir</option>
-              </select><br><br>
+                <p class="text-danger" style="font-size: 0.75rem;" id="generoAlert">* Debe seleccionar un género</p>
+                <label for="genero">Género</label>
+                <select id="genero" name="genero">
+                  <option value="1">Masculino</option>
+                  <option value="2">Femenino</option>
+                  <option value="3">Prefiero no decir</option>
+                </select><br><br>
               
 
               <div class="mb-3">
@@ -108,9 +108,9 @@
                 <label for="motiv">Motivación para Postular</label>
                 <input type="text" class="form-control" id="motiv"  name="motiv"
                 pattern="[A-Za-zñÑáéíóúÁÉÍÓÚüÜ \s]+" required>
-              </div>
-              <button type="button" class="btn btn-light" id="sendB">Envíar</button>
-        </div>
+                </div>
+                <button type="button" class="btn btn-primary" id="sendB">Envíar</button>
+          </div>
       </div>
 
       </form>
@@ -118,7 +118,7 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
         <script src="js/jquery-3.6.4.js"></script>
-        <script src="js/JQueryval.js"></script>
+        <script src="js/validate.js"></script>
 </body>
 
 </html>
