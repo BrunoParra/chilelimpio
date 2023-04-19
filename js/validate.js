@@ -58,8 +58,20 @@ function validaTodo(){
         const profesionVal = profesion.value;
         const motivVal = motiv.value;
 
+        //##Reseteamos la visibilidad de las alertas en caso que el usuario oprima enviar de nuevo 
+        //y pase algunas validaciones pero no todas
 
-
+        rutAdv.style.display = "none";
+        nomAlert.style.display = "none";
+        ap1Alert.style.display = "none";
+        ap2Alert.style.display = "none";
+        edadAlert.style.display = "none";
+        fnacAlert.style.display = "none";
+        generoAlert.style.display = "none";
+        emailAlert.style.display = "none";
+        phoneAlert.style.display = "none";
+        profAlert.style.display = "none";
+        motivAlert.style.display = "none";
 
         //##Ahora sí procedemos a validar
         let count = 0;
