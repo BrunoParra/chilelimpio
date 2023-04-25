@@ -1,4 +1,4 @@
-const botonEnv = document.getElementById("sendB");
+ const botonEnv = document.getElementById("sendB");
 let botCarta;
 //Para obtener la fecha
 const options = { day: 'numeric', month: 'long', year: 'numeric' };
